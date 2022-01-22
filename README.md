@@ -21,3 +21,11 @@ python -c "import tkinter;print(tkinter.TkVersion)"
 ```sh
 python main
 ```
+
+## Licence
+
+[MIT](https://github.com/shinshin86/tkinter-note-app/blob/main/LICENSE)
+
+## Author
+
+[Yuki Shindo](https://shinshin86.com/en)
