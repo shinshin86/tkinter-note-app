@@ -22,6 +22,16 @@ python -c "import tkinter;print(tkinter.TkVersion)"
 python main
 ```
 
+## Build the executable file
+
+Create an executable file using cx_Freeze.
+
+### Mac
+
+```sh
+python setup.py bdist_mac
+```
+
 ## Licence
 
 [MIT](https://github.com/shinshin86/tkinter-note-app/blob/main/LICENSE)
