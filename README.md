@@ -19,7 +19,7 @@ python -c "import tkinter;print(tkinter.TkVersion)"
 ## Start GUI App
 
 ```sh
-python main
+python main.py
 ```
 
 ## Build the executable file
