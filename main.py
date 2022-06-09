@@ -63,7 +63,7 @@ class App:
 
     def update_note_with_title(self, title):
         if self.editer.title.get() == "":
-            tkm.showinfo("Create Error", "Title is required.")
+            tkm.showinfo("Update Error", "Title is required.")
             return
 
         note_list = get_all_note()
@@ -93,12 +93,17 @@ class App:
 
 
     def remove_note_with_title(self, title):
+        if self.editer.title.get() == "":
+            tkm.showinfo("Remove Error", "Title is required.")
+            return
+
         note_list = get_all_note()
         target_note = next((note for note in note_list if note["title"] == title), None)
 
         if tkm.askokcancel("Remove note", "Remove note: " + target_note["title"]):
             remove_note(target_note["id"])
             self.refresh_note_list()
+            self.clear_editer()
 
 
 def main():
